@@ -67,6 +67,7 @@ def mainloop():
                 original_words.append(s)
     except:
         print("ERROR: Неу далось открыть файл all.txt")
+        input()
         return
     say_text("Привет")
     run = True
