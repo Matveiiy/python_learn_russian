@@ -122,6 +122,7 @@ def mainloop():
         else:
             say_text("Чуть-чуть не так")
             print(words[cnt])
+            words.append(words[cnt])
     used_file.close()
 
 mainloop()
