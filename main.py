@@ -77,7 +77,7 @@ def mainloop():
         used_words = set();newwords = []
         with open("used.txt", encoding='utf-8', mode = "r") as f:
             for line in f:
-                s = line.strip('\n').strip().lower()
+                s = line.strip('\n').strip()
                 used_words.add(s)
         for i in original_words:
             if not (i in used_words): newwords.append(i)
